@@ -6,7 +6,7 @@ Before starting this section, run the CLI command below to confirm that the ARM 
 
 ```bash
 az deployment group show --name ase_deployment -g $RESOURCE_GROUP
-// change the name of the deployment with the deployment ID of the Resource Group. 
+#change the name of the deployment with the deployment ID of the Resource Group. 
 ```
 
 Check the `provisioningState` property in the JSON output.
