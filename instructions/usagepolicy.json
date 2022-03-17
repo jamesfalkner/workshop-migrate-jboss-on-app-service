@@ -16,5 +16,14 @@
             "Value": "2"
           }
         ]
+      },
+    {
+        "ResourceType": "Microsoft.Network/applicationGateways",
+        "Parameter": [
+          {
+            "Name": "max-cpu-cores",
+            "Value": "2"
+          }
+        ]
       }
   ]
