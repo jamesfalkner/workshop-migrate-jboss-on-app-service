@@ -58,10 +58,10 @@ First, we will need to update Service Principal so that our workflow can log int
 ```jsonc
 {
    // replace the cliend id, client secret, subscription id, tenant id
-  "clientId": "67b6cf74-0050-4a9b-a78e-d061e3a1994e",
-  "clientSecret": "DTu._pEGE7LeU3ouRQTGsSxwdByxHP0U2-",
-  "subscriptionId": "693eabcf-7fb7-4044-8da4-9ef25487eb90",
-  "tenantId": "b84b647a-5f02-4f6e-8103-7059fa765d2f",
+  "clientId": "67b6cf14-0050-419b-a78e-d061e3a1394e",
+  "clientSecret": "DTu._pEGE7LeU3ousQTGasSxwdBcxHP0U2-",
+  "subscriptionId": "693eabcf-7fb7-4144-8da4-9ef27487ec90",
+  "tenantId": "b84b647a-5f02-4f6e-8603-7059fa761d2f",
   "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
   "resourceManagerEndpointUrl": "https://management.azure.com/",
   "activeDirectoryGraphResourceId": "https://graph.windows.net/",
