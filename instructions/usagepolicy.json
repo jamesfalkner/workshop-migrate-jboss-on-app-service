@@ -1,0 +1,20 @@
+[
+    {
+      "ResourceType": "Microsoft.Compute/virtualMachines",
+      "Parameter": [
+        {
+          "Name": "max-cpu-cores",
+          "Value": "2"
+        }
+      ]
+    },
+    {
+        "ResourceType": "Microsoft.DBforPostgreSQL/servers",
+        "Parameter": [
+          {
+            "Name": "max-cpu-cores",
+            "Value": "2"
+          }
+        ]
+      }
+  ]
