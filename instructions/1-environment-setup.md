@@ -158,5 +158,3 @@ Later sections of this workshop will introduce and explain the App Service Envir
 *Congratulations!* Your GitPod workspace is now ready to go. Click the link below to go to the next section
 
 ---
-
-➡️ Next section: [2 - Learn about Azure App Service](2-learn-about-app-service.md)
