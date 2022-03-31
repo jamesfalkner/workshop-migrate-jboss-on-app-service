@@ -45,7 +45,7 @@ The exercises in this workshop will involve creating and configuring resources f
 
 1. Open the VS Code terminal in GitPod by going to the existing `bash` terminal:
 
-    <img src="../img/0-terminal.png" width=650 align=center>
+    ![Open terminal](../img/0-terminal.png)
 
 2. Run the following command to start the authentication flow.
 
@@ -110,7 +110,7 @@ Replace the entire file with the below content, and then replace the placeholder
 
 Save the file, then close your existing bash Terminal since it will not have these new settings (careful not to close the others!):
 
-<img src="../img/0-bash-kill.png" width=650 align=center>
+![Save and close terminal](../img/0-bash-kill.png)
 
 Next, open a new Terminal using the `＋` button and confirm the values are correct by running this command in the new Terminal:
 

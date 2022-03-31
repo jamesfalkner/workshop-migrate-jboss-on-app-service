@@ -64,7 +64,7 @@ You have already configured values for `WEBAPP_NAME`, `LOCATION` and `RESOURCE_G
 
 You should see the following on the web app:
 
-<img src="../img/1-landing.png" width=700 align=center>
+![landing Page](../img/1-landing.png)
 
 ## 2.4 - The Azure Portal
 
