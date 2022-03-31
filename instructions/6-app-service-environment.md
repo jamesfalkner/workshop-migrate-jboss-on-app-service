@@ -99,5 +99,4 @@ az webapp config appsettings set -g $RESOURCE_GROUP -n "${WEBAPP_NAME}-ase" --se
 1. [Overview of ASEv3](https://docs.microsoft.com/azure/app-service/environment/overview)
 2. [How-To configure App Gateway with an ILB ASE](https://docs.microsoft.com/azure/app-service/environment/integrate-with-application-gateway)
 3. [How-To Deploy to Network-secured Web Apps](https://azure.github.io/AppService/2021/03/01/deploying-to-network-secured-sites-2.html)
-
 ---

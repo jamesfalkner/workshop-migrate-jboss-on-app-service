@@ -13,5 +13,4 @@ az group delete --name $RESOURCE_GROUP --yes
 ## 8.2 - Provide Feedback
 
 Have feedback, a suggestion, or found a typo? Please let us know by [filing an issue on the GitHub Repository](https://github.com/Azure-Samples/workshop-migrate-jboss-on-app-service/issues/new).
-
 ---
