@@ -33,17 +33,9 @@ Let's cover a few key terms about App Service:
 
 To get started, let's create a JBoss EAP web app using the Azure CLI.
 
-First, we will need a new resource group to house the resources we will create in this lab. You have already configured values for `WEBAPP_NAME`, `LOCATION` and `RESOURCE_GROUP` in the previous section and you will use them here.
+You have already configured values for `WEBAPP_NAME`, `LOCATION` and `RESOURCE_GROUP` in the previous section and you will use them here.
 
-1. Create a new resource group. If you already created a resource group when you deployed the ASE, then you can skip this step.
-
-    ```bash
-    az group create --location $LOCATION --resource-group $RESOURCE_GROUP
-    ```
-
-    You will see a JSON object returned, (hopefully) with `"provisioningState": "Succeeded"`.
-
-1. Next, we will need to create an App Service Plan. The App Service Plan is the compute container, it determines your cores, memory, price, and scale.
+1. We will need to create an App Service Plan. The App Service Plan is the compute container, it determines your cores, memory, price, and scale.
 
     ```bash
     az appservice plan create --name "workshop-app-service-plan" \
@@ -83,6 +75,11 @@ Let's go to the Azure Web App you created in the last exercise. In the Portal, u
 ![The Azure Portal](../img/1-azure-dashboard.png)
 
 On the list of resources, you'll see your newly-created webapp (along with other resources we'll use later):
+
+> Tip: This will be the value which you provided in the lab 01 exercise. This value will be unique for everyone.
+```bash
+echo $WEBAPP_NAME #to print the value of the WEBAPP
+```
 
 ![The Azure Portal](../img/1-allresources.png)
 
@@ -129,10 +126,6 @@ The EAP log content is found in the `LogFiles/Application/server.xxxxx.log` file
 
 > **NOTE** Logs can be configured with a number of options. Consult the [az webapp log docs](https://docs.microsoft.com/en-us/cli/azure/webapp/log?view=azure-cli-latest) for more details.
 
-*Congratulations!* You created a new Azure Web App running JBoss EAP, but you have not deployed any app to it yet. Click the link below to go to the next section to migrate a WebLogic app to JBoss EAP.
+*Congratulations!* You created a new Azure Web App running JBoss EAP, but you have not deployed any app to it yet. Proceed to the next section to migrate a WebLogic app to JBoss EAP.
 
 ---
-
-⬅️ Previous section: [1 - Environment Setup](1-environment-setup.md)
-
-➡️ Next section: [3 - Migrate a WebLogic app to JBoss EAP](3-migrate-weblogic-to-jboss.md)

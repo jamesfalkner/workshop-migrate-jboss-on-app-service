@@ -54,7 +54,7 @@ First, we will need to update Service Principal so that our workflow can log int
 1. You can get the details of Service Pricipal from the CloudLabs page.
 2. Open a browser to your fork of the repository on GitHub.
 3. On the repository, go to **Settings** > **Secrets** > **New repository secret**.
-4. Replace the values of ClientID, ClientSecret, SubscriptionID, TenantID with the values you get from CloudLabs - Service Principle details. It should look like this
+4. Replace the values of **ClientID, ClientSecret, SubscriptionID, TenantID** with the values you get from CloudLabs - Service Principle details. It should look like this
 ```jsonc
 {
    // replace the cliend id, client secret, subscription id, tenant id
@@ -62,6 +62,7 @@ First, we will need to update Service Principal so that our workflow can log int
   "clientSecret": "DTu._pEGE7LeU3ousQTGasSxwdBcxHP0U2-",
   "subscriptionId": "693eabcf-7fb7-4144-8da4-9ef27487ec90",
   "tenantId": "b84b647a-5f02-4f6e-8603-7059fa761d2f",
+
   "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
   "resourceManagerEndpointUrl": "https://management.azure.com/",
   "activeDirectoryGraphResourceId": "https://graph.windows.net/",
@@ -100,7 +101,3 @@ az webapp config appsettings set -g $RESOURCE_GROUP -n "${WEBAPP_NAME}-ase" --se
 3. [How-To Deploy to Network-secured Web Apps](https://azure.github.io/AppService/2021/03/01/deploying-to-network-secured-sites-2.html)
 
 ---
-
-⬅️ Previous section: [5 - Setup GitHub Actions](5-set-up-github-actions.md)
-
-➡️ Next section: [7 - Deploy to Staging Slots](7-deploy-to-staging-slots.md)

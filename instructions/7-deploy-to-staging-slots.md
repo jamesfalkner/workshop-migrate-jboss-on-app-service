@@ -47,8 +47,6 @@ This section used asymmetric routing on the App Gateway to route requests from t
 
 Asymmetric routing worked in the context of this workshop, but it can cause problems... for example if a path of our production application included `/pr-1`, then users would be routed to that staging environment (`pr-1.internal`) instead of the path of the production app.
 
+Proceed to the next section.
+
 ---
-
-⬅️ Previous section: [6 - App Service Environment](6-app-service-environment.md)
-
-➡️ Next section: [8 - Conclusion](8-conclusion.md)

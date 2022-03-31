@@ -69,11 +69,19 @@ Let's set some environment variables for later use. Press `F1` to open the comma
 
 ![Preferences](../img/0-prefs.png)
 
-Replace the entire file with the below content, and then replace the placeholder values in `[]` with your unique values. Note that some of these must be globally unique, so consider adding your name or initials to them. You can optionally use a different `LOCATION` (the Azure region in which your resources will be deployed later on) if you want it to be closer to your geographic location.
-
 > **HINT**: Valid values for `LOCATION` can be discovered by running `az account list-locations|jq '.[].name'` in the terminal.
 
 > **HINT**: You can discover your Subscription ID with `az account show | jq -r .id`
+
+> **HINT** You can discover your ASE_WEBAPP_NAME by logging into the Azure Portal and navigating to **App service environment** > **Web App Name**
+
+![ASE-WEBAPP-NAME](../img/0-app-service-ase.png)
+
+> This should be unique for everyone.
+
+![ASE-WEBAPP-NAME](../img/0-app-service-ase-name.png)
+
+Replace the entire file with the below content, and then replace the placeholder values in `[]` with your unique values. Note that some of these must be globally unique, so consider adding your name or initials to them. You can optionally use a different `LOCATION` (the Azure region in which your resources will be deployed later on) if you want it to be closer to your geographic location.
 
 ```jsonc
 {
@@ -81,21 +89,21 @@ Replace the entire file with the below content, and then replace the placeholder
         // Obtain your subscription ID with hint above
         "SUBSCRIPTION_ID": "[Your Azure Subscription ID]",
 
-        // these must be unique to you, consider using initials of your name
-        "DB_SERVER_NAME": "[Your initials]-postgres-database",
-        "WEBAPP_NAME": "[Your initials]-webapp",
+        //Obtain your unique ASE_WEBAPP_NAME with hint above. This will be different than the WEBAPP_NAME
+        "ASE_WEBAPP_NAME": "[Paste the app service environment name here]",
 
-        // this must be the same name from the ARM template you deployed earlier, and different from WEBAPP_NAME
-        "ASE_WEBAPP_NAME": "[Your initials]-ase-webapp",
+        // these must be unique to you. User should assign a unique value to below variables.
+        "DB_SERVER_NAME": "[Unique-value]-postgres-database",
+        "WEBAPP_NAME": "[Unique-value]-webapp",
 
         // these are OK to be hard-coded
-        "RESOURCE_GROUP": "jboss-rg",
+        "RESOURCE_GROUP": "[Resource-group-name]",
         "SERVICE_PRINCIPAL_NAME": "jboss-ase-sp",
         "DB_USERNAME": "cooladmin",
         "DB_PASSWORD": "EAPonAzure1",
 
-        // use this default, or use a location closer to you
-        "LOCATION": "eastus"
+        // location of the RG. Please navigate to Azure Portal > Resource Group and note down the RG location.
+        "LOCATION": "[Resource-group-location]"
     }
 }
 ```
@@ -125,36 +133,8 @@ You should see the same values you entered. Now each new Terminal you open will 
 > the file is saved by clicking into the file, and using `CTRL-S` (or `CMD-S` on a Mac), then close the
 > newly-opened Terminal and open a new one and try the above command again until it shows correct values.
 
-## 1.4 - Deploy the App Service Environment
-
-> **Warning:**
->
-> If you already executed this the day before the workshop, you can safely skip this section,
-> as there is no need to execute it again (it will produce a deployment error that is harmless).
-
-Later sections of this workshop will introduce and explain the App Service Environment, a single-tenant version of App Service. This service is quite large, so we will initiate the deployment for it now so that it is ready for us in the later sections of the workshop
-
-1. First, create a resource group:
-
-    ```bash
-    az group create --name $RESOURCE_GROUP --location $LOCATION
-    ```
-
-2. Next, deploy the ARM Template to that resource group (this will take 2-3 hours to complete!). The `ASE_WEBAPP_NAME` must be globally unique, so consider using part of your name or including numbers.
-
-    ```bash
-    UNIQUE_NAME=<provide a unique name>  # upper and lowercase letters, numbers, and dashes OK
-    az group create --name $RESOURCE_GROUP --location $LOCATION
-    az deployment group create \
-        --name ase_deployment \
-        --resource-group $RESOURCE_GROUP \
-        --template-uri https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/templates/ase-template.json \
-        --no-wait \
-        --parameters webAppName=${UNIQUE_NAME}-ase-webapp
-    ```
-
 > **Tip**: You can view the progress of your deployments in the Azure Portal by navigating to your resource group, and clicking on the **Deployments** tab.
 
-*Congratulations!* Your GitPod workspace is now ready to go. Click the link below to go to the next section
+*Congratulations!* Your GitPod workspace is now ready to go. Proceed to the next section
 
 ---

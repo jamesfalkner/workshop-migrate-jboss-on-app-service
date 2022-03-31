@@ -579,8 +579,6 @@ It will open a new web browser to showcase the CoolStore web app:
 
 Now that you have migrated an existing Java EE app on JBoss EAP, you are ready to start modernizing the application by deploying it on Azure App Service in incremental steps, and employing modern techniques to ensure the application runs well in a distributed and cloud environment.
 
+Procced to the next section.
+
 ----
-
-⬅️ Previous section: [2 - Learn about Azure App Service](2-learn-about-app-service.md)
-
-➡️ Next section: [4 - Create and Configure PostgreSQL on Azure](4-create-postgres-on-azure.md)

@@ -182,8 +182,6 @@ If you then browse your your GitHub repository in a separate tab (e.g. _https://
 
 **Congratulations!** You now have deployed a PostgreSQL database and connected it to your JBoss EAP instance running on App Service, but you have not yet deployed any application to EAP. In the next section, you will set up automation to deploy and redeploy the app each time you wish to make a change.
 
+Proceed to the next section.
+
 ---
-
-⬅️ Previous section: [3 - Migrate a WebLogic app to JBoss EAP](3-migrate-weblogic-to-jboss.md)
-
-➡️ Next section: [5 - Deploy with GitHub Actions](5-set-up-github-actions.md)
