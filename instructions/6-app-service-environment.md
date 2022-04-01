@@ -56,6 +56,13 @@ First, we will need to update Service Principal so that our workflow can log int
 3. On the repository, go to **Settings** > **Secrets** > **New repository secret**.
 4. Replace the values of **ClientID, ClientSecret, SubscriptionID, TenantID** with the values you get from CloudLabs - Service Principle details. It should look like this
 
+```
+**Tip💡:** Proceed to cloudlabs details and click on service principle to get the details.
+```
+
+![service principal](../img/5-service-principle.png)
+
+
 ```jsonc
 {
    // replace the cliend id, client secret, subscription id, tenant id
