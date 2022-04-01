@@ -63,25 +63,69 @@ The exercises in this workshop will involve creating and configuring resources f
 
 > If you couldn't authenticate using the browser window, you can log in using your username and password directly in the command, `az login -u johndoe@contoso.com -p verySecretPassword`. This only works if your account does **not** have 2FA enabled.
 
+## 1.2.1 - Locate Resources Name
+
+* **Azure Portal:**
+
+    To login to [Azure Portal](https://www.portal.azure.com/) . 
+
+    ![Azure Portal](../img/0-azure-portal-login.png)
+
+    Use the credential provided by Cloudlabs to Login.
+
+    ![cloudlabs-creds](../img/0-cloudlabs-creds.png)
+
+* **Resource Group:**
+    
+    Go to [Azure Portal](https://portal.azure.com/) and search **Resource Groups**.
+
+    ![Resource Groups](../img/0-ResourceGroup.png)
+    
+    Select **Resource Groups** and Note down the existing Resource Group name. (*You will be using the value further in the exercise*)
+
+    ![Resource Groups](../img/0-ResourceGroup-Name.png)
+
+* **Location:**
+
+    Go to [Azure Portal](https://portal.azure.com/) and search **Resource Group**.
+
+    ![Resource Groups](../img/0-ResourceGroup.png)
+    
+    Select **Resource Group** and Note down the existing resource group  Location name. (*You will be using the value further in the exercise*)
+
+    ![Resource Groups](../img/0-ResourceGroup-Location.png)
+
+* **Subscription ID**
+
+    Go to [Azure Portal](https://portal.azure.com/) and search **Subscription**.
+
+    ![Subscription](../img/0-Subscription.png)
+
+     Select **Subscription** and Note down the Subscription ID. (*You will be using the value further in the exercise*)
+
+    ![Subscription](../img/0-Subscription-id.png)
+
+> **HINT**: You can discover your Subscription ID with `az account show | jq -r .id`
+
+* **App Service Name**
+
+    Go to [Azure Portal](https://portal.azure.com/) and search **App Service**.
+
+    ![ASE-WEBAPP-NAME](../img/0-app-service-ase.png)
+
+    Select **App Service** and Note down the existing app service Name. (*You will be using the value further in the exercise*) 
+
+    This should be unique for everyone.
+
+    ![ASE-WEBAPP-NAME](../img/0-app-service-ase-name.png)
+
 ## 1.3 - Configure the workspace
 
 Let's set some environment variables for later use. Press `F1` to open the command search window, and type `settings` into the search box, then select **Preferences: Open Workspace Settings (JSON)**. This will open a mostly empty file:
 
 ![Preferences](../img/0-prefs.png)
 
-> **HINT**: Valid values for `LOCATION` can be discovered by running `az account list-locations|jq '.[].name'` in the terminal.
-
-> **HINT**: You can discover your Subscription ID with `az account show | jq -r .id`
-
-> **HINT** You can discover your ASE_WEBAPP_NAME by logging into the Azure Portal and navigating to **App service environment** > **Web App Name**
-
-![ASE-WEBAPP-NAME](../img/0-app-service-ase.png)
-
-> This should be unique for everyone.
-
-![ASE-WEBAPP-NAME](../img/0-app-service-ase-name.png)
-
-Replace the entire file with the below content, and then replace the placeholder values in `[]` with your unique values. Note that some of these must be globally unique, so consider adding your name or initials to them. You can optionally use a different `LOCATION` (the Azure region in which your resources will be deployed later on) if you want it to be closer to your geographic location.
+Replace the entire file with the below content, and then replace the placeholder values in `[]` with your unique values. Note that some of these must be globally unique, so consider adding your name or initials to them.
 
 ```jsonc
 {
@@ -95,15 +139,13 @@ Replace the entire file with the below content, and then replace the placeholder
         // these must be unique to you. User should assign a unique value to below variables.
         "DB_SERVER_NAME": "[Unique-value]-postgres-database",
         "WEBAPP_NAME": "[Unique-value]-webapp",
+        "RESOURCE_GROUP": "[Resource-group-name]",
+        "LOCATION": "[Resource-group-location]",
 
         // these are OK to be hard-coded
-        "RESOURCE_GROUP": "[Resource-group-name]",
         "SERVICE_PRINCIPAL_NAME": "jboss-ase-sp",
         "DB_USERNAME": "cooladmin",
-        "DB_PASSWORD": "EAPonAzure1",
-
-        // location of the RG. Please navigate to Azure Portal > Resource Group and note down the RG location.
-        "LOCATION": "[Resource-group-location]"
+        "DB_PASSWORD": "EAPonAzure1"
     }
 }
 ```
@@ -135,5 +177,8 @@ You should see the same values you entered. Now each new Terminal you open will 
 
 > **Tip**: You can view the progress of your deployments in the Azure Portal by navigating to your resource group, and clicking on the **Deployments** tab.
 
+<br>
 *Congratulations!* Your GitPod workspace is now ready to go. Proceed to the next section
+<br>
+
 ---
