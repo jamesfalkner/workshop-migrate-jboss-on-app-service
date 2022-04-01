@@ -74,50 +74,19 @@ The exercises in this workshop will involve creating and configuring resources f
     Use the credential provided by Cloudlabs to Login.
 
     ![cloudlabs-creds](../img/0-cloudlabs-creds.png)
-
-* **Resource Group:**
     
     Go to [Azure Portal](https://portal.azure.com/) and search **Resource Groups**.
 
     ![Resource Groups](../img/0-ResourceGroup.png)
     
-    Select **Resource Groups** and Note down the existing Resource Group name. (*You will be using the value further in the exercise*)
+    Select **Resource Groups** and Note down the values. (*You will be using the value further in the exercise*)
 
-    ![Resource Groups](../img/0-ResourceGroup-Name.png)
+    ![Resource Groups](../img/0-aio.png)
 
-* **Location:**
-
-    Go to [Azure Portal](https://portal.azure.com/) and search **Resource Group**.
-
-    ![Resource Groups](../img/0-ResourceGroup.png)
-    
-    Select **Resource Group** and Note down the existing resource group  Location name. (*You will be using the value further in the exercise*)
-
-    ![Resource Groups](../img/0-ResourceGroup-Location.png)
-
-* **Subscription ID**
-
-    Go to [Azure Portal](https://portal.azure.com/) and search **Subscription**.
-
-    ![Subscription](../img/0-Subscription.png)
-
-     Select **Subscription** and Note down the Subscription ID. (*You will be using the value further in the exercise*)
-
-    ![Subscription](../img/0-Subscription-id.png)
-
-> **HINT**: You can discover your Subscription ID with `az account show | jq -r .id`
-
-* **App Service Name**
-
-    Go to [Azure Portal](https://portal.azure.com/) and search **App Service**.
-
-    ![ASE-WEBAPP-NAME](../img/0-app-service-ase.png)
-
-    Select **App Service** and Note down the existing app service Name. (*You will be using the value further in the exercise*) 
-
-    This should be unique for everyone.
-
-    ![ASE-WEBAPP-NAME](../img/0-app-service-ase-name.png)
+    * Resource Group Name
+    * Subscription ID
+    * Location
+    * ASE Webapp Name
 
 ## 1.3 - Configure the workspace
 
@@ -134,7 +103,7 @@ Replace the entire file with the below content, and then replace the placeholder
         "SUBSCRIPTION_ID": "[Your Azure Subscription ID]",
 
         //Obtain your unique ASE_WEBAPP_NAME with hint above. This will be different than the WEBAPP_NAME
-        "ASE_WEBAPP_NAME": "[Paste the app service environment name here]",
+        "ASE_WEBAPP_NAME": "[Paste the webapp name here]",
 
         // these must be unique to you. User should assign a unique value to below variables.
         "DB_SERVER_NAME": "[Unique-value]-postgres-database",

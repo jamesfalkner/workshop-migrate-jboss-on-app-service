@@ -183,5 +183,8 @@ If you then browse your your GitHub repository in a separate tab (e.g. _https://
 
 **Congratulations!** You now have deployed a PostgreSQL database and connected it to your JBoss EAP instance running on App Service, but you have not yet deployed any application to EAP. In the next section, you will set up automation to deploy and redeploy the app each time you wish to make a change.
 
+<br>
+
 Proceed to the next section.
+
 ---

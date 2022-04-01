@@ -170,6 +170,8 @@ re-visit your running app via its URL and it should now be sporting your new bis
 
 **Congratulations!** In this exercise you setup GitHub Actions to provide basic checks for your app when developers make changes, and created another Action to deploy those changes to your Azure App Service with JBoss EAP. You then deployed your app, and made a change, and watched the GitHub Action automate the redeployment. In the next section we'll explore how you can provide greater scale and security for your applications using _App Service Environments_.
 
+<br>
 
 Proceed to the next section.
+
 ---

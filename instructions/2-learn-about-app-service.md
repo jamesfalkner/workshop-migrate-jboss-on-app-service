@@ -126,5 +126,8 @@ The EAP log content is found in the `LogFiles/Application/server.xxxxx.log` file
 
 > **NOTE** Logs can be configured with a number of options. Consult the [az webapp log docs](https://docs.microsoft.com/en-us/cli/azure/webapp/log?view=azure-cli-latest) for more details.
 
+<br>
+
 *Congratulations!* You created a new Azure Web App running JBoss EAP, but you have not deployed any app to it yet. Proceed to the next section to migrate a WebLogic app to JBoss EAP.
+
 ---
