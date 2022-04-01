@@ -172,11 +172,10 @@ You should see the same values you entered. Now each new Terminal you open will 
 
 > **Warning:** If you still see placeholder values instead of the values you entered into the JSON file, ensure that the file is saved by clicking into the file, and using `CTRL-S` (or `CMD-S` on a Mac), then close the newly-opened Terminal and open a new one and try the above command again until it shows correct values.
 
-    **Tip**: You can view the progress of your deployments in the Azure Portal by navigating to your resource group, and clicking on the **Deployments** tab.
-
-randomexample.com
+> **Tip**: You can view the progress of your deployments in the Azure Portal by navigating to your resource group, and clicking on the **Deployments** tab.
 
 <br>
+
 *Congratulations!* Your GitPod workspace is now ready to go. Proceed to the next section
 <br>
 
