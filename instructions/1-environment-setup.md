@@ -79,14 +79,17 @@ The exercises in this workshop will involve creating and configuring resources f
 
     ![Resource Groups](../img/0-ResourceGroup.png)
     
-    Select **Resource Groups** and Note down the values. (*You will be using the value further in the exercise*)
-
-    ![Resource Groups](../img/0-aio.png)
+    Select **Resource Groups** and Note down the following values. (*You will be using the value further in the exercise*)
 
     * Resource Group Name
     * Subscription ID
     * Location
     * ASE Webapp Name
+
+    <br>
+
+    ![Resource Groups](../img/0-aio.png)
+
 
 ## 1.3 - Configure the workspace
 
@@ -103,13 +106,13 @@ Replace the entire file with the below content, and then replace the placeholder
         "SUBSCRIPTION_ID": "[Your Azure Subscription ID]",
 
         //Obtain your unique ASE_WEBAPP_NAME with hint above. This will be different than the WEBAPP_NAME
-        "ASE_WEBAPP_NAME": "[Paste the webapp name here]",
+        "ASE_WEBAPP_NAME": "[Paste the webapp name here]", //it should come like redhattestxxxxxxxx
 
         // these must be unique to you. User should assign a unique value to below variables.
         "DB_SERVER_NAME": "[Unique-value]-postgres-database",
         "WEBAPP_NAME": "[Unique-value]-webapp",
         "RESOURCE_GROUP": "[Resource-group-name]",
-        "LOCATION": "[Resource-group-location]",
+        "LOCATION": "[Resource-group-location]",   // Ex. eastus, westus
 
         // these are OK to be hard-coded
         "SERVICE_PRINCIPAL_NAME": "jboss-ase-sp",
