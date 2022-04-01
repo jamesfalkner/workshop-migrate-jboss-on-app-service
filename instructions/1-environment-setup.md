@@ -102,16 +102,16 @@ Replace the entire file with the below content, and then replace the placeholder
 ```jsonc
 {
     "terminal.integrated.env.linux": {
-        // Obtain your subscription ID with hint above
+        // Provide the value which you noted down earlier
         "SUBSCRIPTION_ID": "[Your Azure Subscription ID]",
 
-        //Obtain your unique ASE_WEBAPP_NAME with hint above. This will be different than the WEBAPP_NAME
+        //Provide the value which you noted down earlier
         "ASE_WEBAPP_NAME": "[Paste the webapp name here]", //it should come like redhattestxxxxxxxx
 
-        // these must be unique to you. User should assign a unique value to below variables.
+        // these must be unique to you.
         "DB_SERVER_NAME": "[Unique-value]-postgres-database",
         "WEBAPP_NAME": "[Unique-value]-webapp",
-        "RESOURCE_GROUP": "[Resource-group-name]",
+        "RESOURCE_GROUP": "[Resource-group-name]", //Provide the value which you noted down earlier.
         "LOCATION": "[Resource-group-location]",   // Ex. eastus, westus
 
         // these are OK to be hard-coded
