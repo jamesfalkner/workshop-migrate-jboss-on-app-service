@@ -174,6 +174,8 @@ You should see the same values you entered. Now each new Terminal you open will 
 
 > **Tip**: You can view the progress of your deployments in the Azure Portal by navigating to your resource group, and clicking on the **Deployments** tab.
 
+randomexample.com
+
 <br>
 *Congratulations!* Your GitPod workspace is now ready to go. Proceed to the next section
 <br>
