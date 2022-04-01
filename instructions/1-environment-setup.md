@@ -81,10 +81,10 @@ The exercises in this workshop will involve creating and configuring resources f
     
     Select **Resource Groups** and Note down the following values. (*You will be using the value further in the exercise*)
 
-    * Resource Group Name
-    * Subscription ID
+    * Resource Group Name : Your resource group should look like `ODL-Jboss-XXXXXX-Jbossonapp`
+    * Subscription ID 
     * Location
-    * ASE Webapp Name
+    * ASE Webapp Name : Your ASE Webapp Name should look like `redhattestXXXXXXX`
 
     <br>
 
