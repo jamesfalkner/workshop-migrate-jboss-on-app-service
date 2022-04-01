@@ -148,6 +148,31 @@ You should see the same values you entered. Now each new Terminal you open will 
 **Tip💡:** You can view the progress of your deployments in the Azure Portal by navigating to your resource group, and clicking on the **Deployments** tab.
 ```
 
+## 1.4 Workflow Integration Permission - Github
+
+
+GitHub now separates out ‘workflow’ repo permissions from ‘repo’ permissions. To enable the GitPod workspace to access your GitHub repo, you must grant the workspace permission to access your repo.
+
+Please follow the following steps to enable the permission. 
+
+1. After adding the Repo to workspace. Proceed to [Integration](https://gitpod.io/integrations) window.
+
+2. Click on 3 dots alongside with Github Option.
+
+    ![Integration](../img/0-github.png)
+
+3. Click on edit permission to open the permission screen.
+
+    ![Edit Permission](../img/0-github-edit.png)
+
+4. Check the Repo and Workflow permission in the dialog box, and update the permission.
+
+![Edit Permission](../img/0-github-permission.png)
+
+5. Authorize github to confirm the permissions. 
+
+![Edit Permission](../img/0-github-authorize.png)
+
 <br>
 
 *Congratulations!* Your GitPod workspace is now ready to go. Proceed to the next section
