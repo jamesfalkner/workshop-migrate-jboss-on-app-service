@@ -139,7 +139,9 @@ In this step you will migrate some WebLogic-specific code in the app to use stan
 
 Let's jump to code containing identified migration issues. Expand the **workshop-migrate-jboss-on-app-service** source project in the _Migration Toolkit for Applications_ and navigate to `workshop-migrate-jboss-on-app-service > src > main > java > com > redhat > coolstore > utils > StartupListener.java`. Be sure to click the arrow next to the actual class name `StartupListener.java` to expand and show the Hints:
 
-**_TIP:_** You can use [CTRL+p] (or [CMD+p] on macOS) to quickly open a file. Simply start typing the name of the file in the text box that appears and select your file from the list that is produced.
+```
+**Tip💡:** You can use [CTRL+p] (or [CMD+p] on macOS) to quickly open a file. Simply start typing the name of the file in the text box that appears and select your file from the list that is produced.
+```
 
 ![mta-project-issues](../img/2-mta_project_issues.png)
 
@@ -403,7 +405,9 @@ need to find an equivalent in JBoss.
 
 Remove the unneeded `weblogic-ejb-jar.xml` file from the **Project Explorer** (not the **MTA Explorer**). This file is proprietary to WebLogic and not recognized or processed by JBoss EAP. Delete the file by right-clicking on the `src/main/webapp/WEB-INF/weblogic-ejb-jar.xml` file from the **Project Explorer** and choosing **Delete**, and click **OK**.
 
-> **_TIP:_** If you have the tab for the `weblogic-ejb-jar.xml` file open (or handy) you can quickly find it in the Project Explorer by right-clicking on the tab and then selecting **Reveal in Explorer** as shown.
+```
+**Tip💡:** If you have the tab for the `weblogic-ejb-jar.xml` file open (or handy) you can quickly find it in the Project Explorer by right-clicking on the tab and then selecting **Reveal in Explorer** as shown.
+```
 
 ![gitpod-delete](../img/2-gitpod-delete-jar.png)
 

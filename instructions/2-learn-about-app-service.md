@@ -76,7 +76,10 @@ Let's go to the Azure Web App you created in the last exercise. In the Portal, u
 
 On the list of resources, you'll see your newly-created webapp (along with other resources we'll use later):
 
-> Tip: This will be the value which you provided in the lab 01 exercise. This value will be unique for everyone.
+```
+**Tip💡 :** This will be the value which you provided in the lab 01 exercise. This value will be unique for everyone.
+```
+
 ```bash
 echo $WEBAPP_NAME #to print the value of the WEBAPP
 ```
