@@ -4,9 +4,9 @@
 
 Before starting this section, run the CLI command below to confirm that the ARM template you [deployed earlier](1-environment-setup.md#1.4-Deploy-the-App-Service-Environment) is complete. 
 
+
 ```bash
-#change the name of the deployment with the deployment ID of the Resource Group. (You can find the deployment ID under Resource Group - Deployment Settings)
-az deployment group show --name ase_deployment -g $RESOURCE_GROUP
+az deployment group show --name $Deployment -g $RESOURCE_GROUP
 ```
 
 Check the `provisioningState` property in the JSON output.

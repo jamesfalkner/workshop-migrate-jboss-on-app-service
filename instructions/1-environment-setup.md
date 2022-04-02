@@ -90,6 +90,18 @@ The exercises in this workshop will involve creating and configuring resources f
 
     ![Resource Groups](../img/0-aio.png)
 
+    <br>
+
+* **Deployment Name**
+
+    Navigate to the Existing Resource Group and click on the Deployment tab.
+
+    ![RG-Deployment](../img/05-RG-deployment.png)
+
+    Copy the **Deployment name** (*You will be using the value further in the exercise*)
+
+    ![RG-deployment-name](../img/05-RG-deployment-name.png)
+
 
 ## 1.3 - Configure the workspace
 
@@ -104,6 +116,7 @@ Replace the entire file with the below content, and then replace the placeholder
     "terminal.integrated.env.linux": {
         // Provide the value which you noted down earlier
         "SUBSCRIPTION_ID": "[Your Azure Subscription ID]",
+        "Deployment": "[Your Deployment Name]",
 
         //Provide the value which you noted down earlier
         "ASE_WEBAPP_NAME": "[Paste the webapp name here]", //it should come like redhattestxxxxxxxx
