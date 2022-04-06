@@ -125,8 +125,10 @@ Replace the entire file with the below content, and then replace the placeholder
         "DB_SERVER_NAME": "[Unique-value]-postgres-database",
         "WEBAPP_NAME": "[Unique-value]-webapp",
         //Provide the value which you noted down earlier.
-        "RESOURCE_GROUP": "[Resource-group-name]",
-        // Ex. eastus, westus 
+        "RESOURCE_GROUP": "[Resource-group-name]", 
+        
+        // Hint: Run the following command to get the location of the RG.
+        // az group show --name <RG-Name>
         "LOCATION": "[Resource-group-location]",   
 
         // these are OK to be hard-coded
