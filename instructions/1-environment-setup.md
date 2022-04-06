@@ -124,8 +124,10 @@ Replace the entire file with the below content, and then replace the placeholder
         // these must be unique to you.
         "DB_SERVER_NAME": "[Unique-value]-postgres-database",
         "WEBAPP_NAME": "[Unique-value]-webapp",
-        "RESOURCE_GROUP": "[Resource-group-name]", //Provide the value which you noted down earlier.
-        "LOCATION": "[Resource-group-location]",   // Ex. eastus, westus
+        //Provide the value which you noted down earlier.
+        "RESOURCE_GROUP": "[Resource-group-name]",
+        // Ex. eastus, westus 
+        "LOCATION": "[Resource-group-location]",   
 
         // these are OK to be hard-coded
         "SERVICE_PRINCIPAL_NAME": "jboss-ase-sp",
