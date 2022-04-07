@@ -119,7 +119,8 @@ Replace the entire file with the below content, and then replace the placeholder
         "Deployment": "[Your Deployment Name]",
 
         //Provide the value which you noted down earlier
-        "ASE_WEBAPP_NAME": "[Paste the webapp name here]", //it should come like redhattestxxxxxxxx
+        //it should come like redhattestxxxxxxxx
+        "ASE_WEBAPP_NAME": "[Paste the webapp name here]", 
 
         // these must be unique to you.
         "DB_SERVER_NAME": "[Unique-value]-postgres-database",
