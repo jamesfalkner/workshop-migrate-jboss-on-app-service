@@ -9,33 +9,41 @@ This workshop uses GitPod to provide a pre-configured development environment wi
 
     ![Log into GitPod with GitHub](../img/gitpod-login-prompt.png)
 
-3. On the next screen, select **New Project**
+3. On the next screen, select Poject blade and then click on **New Project**
 
     ![Select new project](../img/gitpod-new-project-prompt.png)
 
-4. Next, select **Authorize**
+4. Select the Project from the drop down menu.
+
+    ![Select the project from the drop down menu](../img/select-the-project.png)
+
+5. Next, select **Authorize**
 
     ![Click authorize](../img/gitpod-authorize-prompt.png)
 
-5. The next screen will ask which account(s) you want to authorize the application in. Select **your personal account**, which should be first in the list.
+6. The next screen will ask which account(s) you want to authorize the application in. Select **your personal account**, which should be first in the list.
 
    ![Select personal account](../img/gitpod-choose-account-prompt.png)
 
-6. Then select your fork of the workshop repository, this will give GitPod permissions to read and write to your repo. Click **Install**.
+7. Then select your fork of the workshop repository, this will give GitPod permissions to read and write to your repo. Click **Install**.
 
    ![Install app](../img/gitpod-select-repository-prompt.png)
 
-7. On the next screen, select the **workshop-migrate-jboss-on-app-service** project.
+8. On the next screen, select the **workshop-migrate-jboss-on-app-service** project.
 
     ![Select workshop-migrate-jboss-on-app-service](../img/gitpod-select-proejct.png)
 
-8. Then select your personal account as the team to instantiate the project into.
+9. Then select your personal account as the team to instantiate the project into.
 
     ![Click your personal account](../img/gitpod-select-team.png)
 
-9. Lastly, click **New workspace**. This will start the dev container and takes about one minute.
+10. Lastly, click **New workspace**. This will start the dev container and takes about one minute.
 
-    ![Click New Workspace](../img/gitpod-start-workspace.png)
+    ![Click New Workspace](../img/gitpod-start-workspace-01.png)
+
+11. It will take some time to create the workspace.
+
+    ![workspace creation](../img/gitpod-start-workspace-02.png)
 
 Once the workspace launches, you will have a cloud-based VS Code IDE!
 

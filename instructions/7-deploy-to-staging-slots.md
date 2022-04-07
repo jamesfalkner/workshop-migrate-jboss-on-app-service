@@ -19,7 +19,30 @@ The ARM Template that you deployed earlier in this workshop already has a deploy
 In this exercise we will set up GitHub Actions workflows to build and deploy our app whenever a **Pull Request** is opened and targets our main branch. This allows dev teams to review the pull request before merging into production.
 
 1. Copy the [`deploy-pull-requests.yaml`](https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/templates/deploy-pull-requests.yaml) and [`clean-up-pr.yaml`](https://raw.githubusercontent.com/Azure-Samples/workshop-migrate-jboss-on-app-service/main/templates/clean-up-pr.yaml) files into your `.github/workflows/` directory.
-2. In each of these files, there will be placeholders in the `env:` section. Replace these placeholders with the name of your ASE web app name, resource group, and app gateway name.
+2. In each of these files, there will be placeholders in the `env:` section. **Replace these placeholders with the name of your ASE web app name, resource group, and app gateway name.**
+
+**TIP💡:** To know your ASE Web app name and RG name use the following command. 
+
+
+```bash
+
+echo $ASE_WEBAPP_NAME
+echo $RESOURCE_GROUP
+
+```
+
+## **TIP💡:** To know your Application gateway name
+
+<br>
+
+Redirect to [Azure Portal](https://portal.azure.com) and click on **All Resources**
+
+![All-resources](../img/1-azure-dashboard.png)
+
+Copy the **Application Gateway Name**
+
+![application-gateway](../img/7-application-gateway.png)
+
 
 ### 7.2.1 - deploy-pull-requests.yaml
 
