@@ -109,6 +109,13 @@ It should report:
 
 The scripts above refer to a number of environment variables that must be set on the EAP App Service. On the Azure Portal, navigate to _Home > All Resources_ once again, and you should see your _App Service_ that you created earlier, alongside your Postgres Database.
 
+
+**TIP💡:** To know your Web App name run the following command.
+
+```bash
+echo $WEBAPP_NAME
+```
+
 ![all-resource](../img/3-all-resources.png)
 
 Click on the App Service to get details about it. Under the _Settings_ category on the left, click on _Configuration_:
