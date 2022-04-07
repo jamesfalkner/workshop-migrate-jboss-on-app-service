@@ -1,21 +1,10 @@
 # 6 - The App Service Environment
 
-## 6.1 - Exercise: check the status of your ASE Deployment
+## 6.1 - Overview of the App Service Environment
 
-Before starting this section, run the CLI command below to confirm that the ARM template you [deployed earlier](1-environment-setup.md#1.4-Deploy-the-App-Service-Environment) is complete. 
+We have created an Azure Web App on the Premium V3 tier. The Premium V3 is a high-performance option for production applications, but for workloads that require even greater scale and security, there is the App Service Environment. The App Service Environment (ASE) is a single-tenant variant of App Service, meaning that the infrastructure components like the load balancers, storage, and VMs are dedicated to only your deployment.
 
-
-```bash
-az deployment group show --name $Deployment -g $RESOURCE_GROUP
-```
-
-Check the `provisioningState` property in the JSON output.
-
-## 6.2 - Overview of the App Service Environment
-
-In Section 1 you created an Azure Web App on the Premium V3 tier. The Premium V3 is a high-performance option for production applications, but for workloads that require even greater scale and security, there is the App Service Environment. The App Service Environment (ASE) is a single-tenant variant of App Service, meaning that the infrastructure components like the load balancers, storage, and VMs are dedicated to only your deployment.
-
-### 6.2.1 - Internal and External ASE
+### 6.1.1 - Internal and External ASE
 
 ASE's can be deployed with an internet-routable IP address or deployed within a VNet, making its IP address accessible only from other resources within the virtual network:
 
@@ -24,7 +13,7 @@ ASE's can be deployed with an internet-routable IP address or deployed within a 
 
 ![Internal VS External ASE](../img/5-internal-vs-external-ase.png)
 
-### 6.2.2 - Features over multi-tenant App Service
+### 6.1.2 - Features over multi-tenant App Service
 
 App Service Environments are appropriate for applications that require:
 

@@ -16,8 +16,6 @@ Azure Database for PostgreSQL offers several options to meet your data needs.
 
 ## 4.2 - Exercise: Create Postgres DB
 
-You can create Postgres databases using the Azure Portal or Azure CLI. Let's use the Azure CLI. 
-
 To create the database service (using the default SKU and PostgreSQL version 11), run the following command:
 
 ```bash
