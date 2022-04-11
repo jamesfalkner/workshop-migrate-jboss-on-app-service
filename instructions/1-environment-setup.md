@@ -95,19 +95,19 @@ The exercises in this workshop will involve creating and configuring resources f
     * **ASE Webapp Name** : Your ASE Webapp Name should look like `redhattestXXXXXXX`
 
 
-        **TIP💡:** To know your resource group location code. Run the following command.
+    **TIP💡:** To know your resource group location code. Run the following command.
 
-    <br>
+  
 
     ```bash
     az group show --name <Resource Group Name>
     ```
 
-    <br>
+
 
     ![Resource Groups](../img/0-aio.png)
 
-    <br>
+
 
 ## 1.3 - Configure the workspace
 
