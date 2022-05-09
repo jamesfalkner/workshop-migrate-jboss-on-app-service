@@ -10,7 +10,7 @@ env:
   WEBAPP: redhattestcxdr4o65vkn5m
   RESOURCE_GROUP: Jbossonapp-605391
   GATEWAY_NAME: gateway-redhattestcxdr4o65vkn5m-ilb-ase
-  STORAGE_ACCOUNT: ""  # This must be a *globally* unique name. (Only lowercase letters and numbers allowed. No spaces, dashes, underscores.)
+  STORAGE_ACCOUNT: "jhf-myprstorage"  # This must be a *globally* unique name. (Only lowercase letters and numbers allowed. No spaces, dashes, underscores.)
 
   LOCATION: eastus
   CONTAINER: stagingartifacts
