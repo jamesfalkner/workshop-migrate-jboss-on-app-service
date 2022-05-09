@@ -87,12 +87,12 @@ The exercises in this workshop will involve creating and configuring resources f
 
     ![Resource Groups](../img/0-ResourceGroup.png)
     
-    Select **Resource Groups** and Note down the following values. (*You will be using the value further in the exercise*)
+    Select **Resource Groups**, click on the only resource group name you see (`JBossonapp-xxxx`) and Note down the following values. (*You will be using the value further in the exercise*)
 
-    * **Resource Group Name** : Your resource group name should look like `ODL-Jboss-XXXXXX-Jbossonapp`
-    * **Subscription ID**
-    * **Location**:
-    * **ASE Webapp Name** : Your ASE Webapp Name should look like `redhattestXXXXXXX`
+    * **Resource Group Name** : Your resource group name should look like `Jbossonapp-XXXXXXX`
+    * **Subscription ID** : Shown in the Overview page for the Resource Group
+    * **Location** : Shown in the Overview page for the Resource Group
+    * **ASE Webapp Name** : Look at the list of resources, and there should be one `App Service` resource created for you, and the name should look like `redhattestXXXXXXX`
 
 
     **TIP💡:** To know your resource group location code. Run the following command.
