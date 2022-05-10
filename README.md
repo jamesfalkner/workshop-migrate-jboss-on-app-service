@@ -1,7 +1,7 @@
 
 <h1 align="center"><a href="instructions/1-environment-setup.md">Start here!</a></h1>
 
-A testasd
+A testasdas
 
 # Migration workshop for JBoss on Azure
 
